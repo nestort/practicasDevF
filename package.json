@@ -1,0 +1,11 @@
+{
+  "name": "practicasdevf",
+  "version": "1.0.0",
+  "description": "Practicas cinta negra DevF",
+  "main": "index.js",
+  "scripts": {    
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nestor Trinidad Montenegro Herrera",
+  "license": "ISC"
+}
