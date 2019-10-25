@@ -1,47 +1,9 @@
-const { ApolloServer, gql } = require('apollo-server');
-
-
-const books = [
-  {
-    title: 'Harry Potter and the Chamber of Secrets',
-    author: 'J.K. Rowling',
-  },
-  {
-    title: 'Jurassic Park',
-    author: 'Michael Crichton',
-  },
-];
-
-const personData = [{
-  age: 19,
-  name: "Juan"
-}];
+import { ApolloServer } from 'apollo-server';
+import typeDefs  from './graphql/schemas';
+import resolvers  from './graphql/resolvers';
 
 
 
-const typeDefs = gql`
-  type Book {
-    title: String
-    author: String
-  }
-
-  type Person {
-    name: String
-    age: Int
-  }
-
-  type Query {
-    books: [Book]
-    person: [Person]
-  }
-`;
-
-const resolvers = {
-  Query: {
-    books: () => books,
-    person: () => personData,
-  },
-};
 
 const server = new ApolloServer({ typeDefs, resolvers });
 
