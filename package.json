@@ -3,9 +3,18 @@
   "version": "1.0.0",
   "description": "Practicas cinta negra DevF",
   "main": "index.js",
-  "scripts": {    
+  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nestor Trinidad Montenegro Herrera",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.9.7",
+    "apollo-server-express": "^2.9.7",
+    "bcrypt": "^3.0.6",
+    "cloudinary": "^1.16.0",
+    "graphql": "^14.5.8",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.6"
+  }
 }
