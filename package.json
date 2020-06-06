@@ -10,7 +10,7 @@
   "author": "Nestor Trinidad Montenegro Herrera",
   "license": "ISC",
   "dependencies": {
-    "apollo-server": "^2.9.7",
+    "apollo-server": "^2.14.2",
     "apollo-server-express": "^2.9.7",
     "bcrypt": "^3.0.6",
     "cloudinary": "^1.16.0",
